@@ -1,0 +1,88 @@
+/* colors : F4F1DE, E07A5F, 3D405B, 81B29A, F2CC8F */
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 95vh;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  background-color: #3D405B;
+}
+
+.container {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-gap: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  border: solid black 4px;
+  background: linear-gradient(to right, #81B29A 50%, #E07A5F 50%);
+}
+
+.wins,
+.loses {
+  padding: 5px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid black 4px;
+  padding: 5px;
+  font-size: 19px;
+  background-color: #F4F1DE;
+}
+
+.user_result{
+  margin-right: 5px;
+}
+
+.result_of_the_game {
+  font-size: 22px;
+}
+
+.game_menu {
+  display: flex;
+  border: solid black 4px;
+  background-color: #F4F1DE;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+}
+
+.items{
+  padding: 5px;
+  max-width: 166px;
+  min-width: 115px;
+}
+
+.img_game{
+  object-fit: contain;
+  height: 150px;
+  width: 100px;
+
+}
+
+.game_btn{
+  width: 93%;
+  height: 35px;
+  background-color: #F2CC8F;
+  border: solid black 4px
+}
